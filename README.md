@@ -53,21 +53,25 @@ Add a product: copy one line in the `PRODUCTS` array and set
 
 ---
 
-## Wire up the real pieces (optional)
+## Admin panel = the Telegram bot (`helix-admin-bot`)
 
-The cart and forms work client-side out of the box. To take real orders / emails:
+Products, the payment account, and orders are managed from a **Telegram bot**,
+not from code. The bot writes to **Firebase Firestore**; this website reads it
+live and writes each checkout as an order the bot can see and mark.
 
-**Payments — Snipcart (easiest for a static site)**
-Add their script + a public API key, then give each "Add to cart" button
-the Snipcart `data-item-*` attributes. See <https://docs.snipcart.com>.
-Or use **Stripe Payment Links** — one link per product, no backend.
-Currently *Checkout* opens a prefilled email order to `SUPPORT_EMAIL`.
+- **Before Firebase is connected:** the site runs on the built-in demo catalog
+  (works out of the box — great for the first Netlify deploy).
+- **After you paste your Firebase web config** into `app.js` (the
+  `firebaseConfig` block near the top) and redeploy: products + the payment
+  account come live from Firestore, and checkout creates real orders.
 
-**Newsletter + contact — Netlify Forms**
-Add `netlify` to the `<form>` tag (and a hidden `form-name` input) and
-Netlify captures submissions automatically — see
-<https://docs.netlify.com/forms/setup/>. Or point the form `action` at a
-[Formspree](https://formspree.io) endpoint.
+Full setup — Firebase project, security rules, and deploying the bot to Railway —
+is in **`../helix-admin-bot/README.md`**.
+
+**Newsletter + contact — Netlify Forms (optional)**
+Add `netlify` to the `<form>` tag (and a hidden `form-name` input) so Netlify
+captures submissions — see <https://docs.netlify.com/forms/setup/>. Or point the
+form `action` at a [Formspree](https://formspree.io) endpoint.
 
 **COA downloads**
 The `COA ↓` buttons are placeholders. Drop PDF files in a `/coa` folder and

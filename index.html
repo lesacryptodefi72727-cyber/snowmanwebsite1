@@ -409,9 +409,44 @@
   </div>
 </aside>
 
+<!-- ============ CHECKOUT MODAL ============ -->
+<div class="modal" id="checkout-modal" hidden>
+  <div class="modal__backdrop" data-close-checkout></div>
+  <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+    <button class="icon-btn modal__x" data-close-checkout aria-label="Close">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+
+    <!-- step: details -->
+    <div id="checkout-step-form">
+      <h2 id="checkout-title">Complete your order</h2>
+      <p class="modal__sub">Enter your details — you'll get payment instructions and an order reference on the next step.</p>
+      <div class="checkout-summary" id="checkout-summary"><!-- items --></div>
+      <div class="field"><label for="co-name">Name / Lab</label><input id="co-name" type="text" placeholder="Jane Doe — Acme Research" autocomplete="name" /></div>
+      <div class="field"><label for="co-contact">Email or Telegram @</label><input id="co-contact" type="text" placeholder="you@lab.com or @yourhandle" /></div>
+      <div class="field"><label for="co-note">Order note (optional)</label><input id="co-note" type="text" placeholder="Anything we should know" /></div>
+      <button class="btn btn--primary btn--block" id="place-order-btn">Place order</button>
+      <p class="modal__fine">For laboratory research use only. No payment is taken on this page — you'll pay using the instructions shown next.</p>
+    </div>
+
+    <!-- step: confirmation -->
+    <div id="checkout-step-done" hidden>
+      <div class="done__icon">✓</div>
+      <h2>Order placed</h2>
+      <p class="modal__sub">Your reference is <strong id="order-ref">—</strong>. Save it. We'll confirm once payment is received.</p>
+      <div class="pay-box">
+        <h4>Payment instructions</h4>
+        <div id="pay-instructions">Payment details will appear here.</div>
+      </div>
+      <p class="modal__sub small" id="done-contact"></p>
+      <button class="btn btn--primary btn--block" data-close-checkout>Done</button>
+    </div>
+  </div>
+</div>
+
 <!-- Toast -->
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<script src="app.js"></script>
+<script type="module" src="app.js"></script>
 </body>
 </html>
