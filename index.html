@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Helix Peptides | High-Purity Research Peptides, Third-Party Tested</title>
+<meta name="description" content="Helix Peptides supplies high-purity research compounds for laboratory study — third-party tested, with certificates of analysis published lot by lot, shipped fast and discreetly. For laboratory research use only." />
+<meta name="theme-color" content="#06121f" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Helix Peptides | High-Purity Research Peptides" />
+<meta property="og:description" content="Third-party tested research peptides with per-batch certificates of analysis. For laboratory research use only." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306121f'/%3E%3Cpath d='M10 7c6 4 6 14 0 18M22 7c-6 4-6 14 0 18M9 11h14M9 16h14M9 21h14' stroke='%2338bdf8' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ============ RESEARCHER VERIFICATION GATE ============ -->
+<div class="gate" id="gate" hidden>
+  <div class="gate__card" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="gate__brand">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="26" height="26"><path d="M10 6c7 4.5 7 15.5 0 20M22 6c-7 4.5-7 15.5 0 20M9 11h14M9 16h14M9 21h14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      </span>
+      <span class="logo-word">HELIX PEPTIDES</span>
+    </div>
+    <h2 id="gate-title">Researcher verification</h2>
+    <p>Helix Peptides sells research peptides exclusively to qualified researchers and laboratories for in vitro and laboratory use. Please confirm before continuing.</p>
+    <label class="gate__check"><input type="checkbox" id="gate-age" /> <span>I am at least 21 years of age.</span></label>
+    <label class="gate__check"><input type="checkbox" id="gate-research" /> <span>I confirm I am a qualified researcher purchasing for in vitro or laboratory research only, not for human or veterinary use.</span></label>
+    <button class="btn btn--primary btn--block" id="gate-enter" disabled>Enter Helix Peptides →</button>
+    <p class="gate__fine">By proceeding you affirm the statements above are true. Products are not for human or veterinary use, not for use in diagnostic procedures, and have not been evaluated by the U.S. Food and Drug Administration.</p>
+  </div>
+</div>
+
+<!-- ============ ANNOUNCEMENT MARQUEE ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track" id="ticker-track">
+    <span>THIRD-PARTY TESTED · COA AVAILABLE</span><span class="dot">◆</span>
+    <span>FREE U.S. SHIPPING ON ORDERS $200+</span><span class="dot">◆</span>
+    <span>SHIPS IN 24–48 BUSINESS HOURS</span><span class="dot">◆</span>
+    <span>DISCREET, PROTECTIVE PACKAGING</span><span class="dot">◆</span>
+    <span>RESEARCH USE ONLY</span><span class="dot">◆</span>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="wrap header__inner">
+    <a class="brand" href="#top" aria-label="Helix Peptides home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="24" height="24"><path d="M10 6c7 4.5 7 15.5 0 20M22 6c-7 4.5-7 15.5 0 20M9 11h14M9 16h14M9 21h14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand__word">Helix Peptides</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#catalog">Shop All</a>
+      <a href="#research">Research Hub</a>
+      <a href="#process">Lab Results</a>
+      <a href="#about">About</a>
+      <a href="#faq-cta">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header__actions">
+      <button class="icon-btn cart-toggle" id="cart-open" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.2 12.3a1.6 1.6 0 0 0 1.6 1.3h8.5a1.6 1.6 0 0 0 1.6-1.3L21.5 7H6.2"/></svg>
+        <span class="cart-count" id="cart-count" hidden>0</span>
+      </button>
+      <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap hero__inner">
+    <div class="hero__copy">
+      <span class="eyebrow"><span class="pulse"></span> Third-party tested · Research-grade peptides</span>
+      <h1>Research Peptides,<br><span class="grad">Tuned for Precision.</span></h1>
+      <p class="hero__lead">Helix Peptides supplies high-purity research compounds for laboratory study — third-party tested, with certificates of analysis published lot by lot, and shipped fast and discreetly. <strong>For laboratory research use only.</strong></p>
+      <div class="hero__cta">
+        <a href="#catalog" class="btn btn--primary">Shop All Peptides</a>
+        <a href="#process" class="btn btn--ghost">View COAs</a>
+      </div>
+      <div class="hero__stats">
+        <div><strong>21+</strong><span>Research compounds</span></div>
+        <div><strong>3rd-Party</strong><span>Tested · COAs published</span></div>
+        <div><strong>24–48h</strong><span>Discreet US shipping</span></div>
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="vial-hero">
+        <div class="vial-hero__glow"></div>
+        <svg viewBox="0 0 160 300" class="vial-hero__svg">
+          <defs>
+            <linearGradient id="liq" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#5fe0ff"/><stop offset="1" stop-color="#2b8fff"/>
+            </linearGradient>
+          </defs>
+          <rect x="52" y="8" width="56" height="18" rx="4" fill="#9fb4cf"/>
+          <rect x="58" y="22" width="44" height="10" rx="3" fill="#6d84a3"/>
+          <path d="M48 40h64v210a26 26 0 0 1-26 26H74a26 26 0 0 1-26-26V40Z" fill="rgba(13,32,51,.6)" stroke="#2a4a6b" stroke-width="2"/>
+          <path d="M52 150h56v98a22 22 0 0 1-22 22H74a22 22 0 0 1-22-22V150Z" fill="url(#liq)" opacity="0.85"/>
+          <rect x="60" y="60" width="40" height="64" rx="6" fill="#fff" opacity="0.06"/>
+          <circle cx="68" cy="190" r="4" fill="#fff" opacity="0.5"/>
+          <circle cx="92" cy="220" r="3" fill="#fff" opacity="0.4"/>
+          <circle cx="80" cy="250" r="2.5" fill="#fff" opacity="0.35"/>
+        </svg>
+        <div class="vial-hero__chip chip-coa"><span class="tick">✓</span> COA Verified</div>
+        <div class="vial-hero__chip chip-purity">Purity · High</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap trust-strip">
+    <div><span class="tick">✓</span> COAs published per batch</div>
+    <div><span class="tick">✓</span> Third-party identity &amp; purity</div>
+    <div><span class="tick">✓</span> Fast, discreet shipping</div>
+    <div><span class="tick">✓</span> Secure encrypted checkout</div>
+  </div>
+</section>
+
+<!-- ============ COMPOUND MARQUEE ============ -->
+<div class="compound-marquee" aria-hidden="true">
+  <div class="compound-marquee__track">
+    <span>BPC-157</span><span>TB-500</span><span>GLP3-RT</span><span>TIRZEPATIDE</span><span>SEMAGLUTIDE</span><span>GHK-CU</span><span>MOTS-C</span><span>SELANK</span><span>SEMAX</span><span>NAD+</span><span>TESAMORELIN</span><span>WOLVERINE</span><span>GLOW</span><span>KLOW</span><span>KISSPEPTIN-10</span><span>SS-31</span>
+    <span>BPC-157</span><span>TB-500</span><span>GLP3-RT</span><span>TIRZEPATIDE</span><span>SEMAGLUTIDE</span><span>GHK-CU</span><span>MOTS-C</span><span>SELANK</span><span>SEMAX</span><span>NAD+</span><span>TESAMORELIN</span><span>WOLVERINE</span><span>GLOW</span><span>KLOW</span><span>KISSPEPTIN-10</span><span>SS-31</span>
+  </div>
+</div>
+
+<!-- ============ STATS BAND ============ -->
+<section class="statband">
+  <div class="wrap statband__grid">
+    <div class="statband__item"><strong id="stat-total">21</strong><span>Research compounds</span></div>
+    <div class="statband__item"><strong id="stat-coa">16</strong><span>With a published COA</span></div>
+    <div class="statband__item"><strong id="stat-verified">18</strong><span>With verified identity data</span></div>
+    <div class="statband__item"><strong>24–48h</strong><span>Dispatch window</span></div>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="section" id="shop">
+  <div class="wrap">
+    <span class="kicker">Shop by category</span>
+    <h2 class="section__title">Browse the catalog</h2>
+    <div class="cats">
+      <a class="cat" href="#catalog" data-cat="peptides">
+        <div class="cat__icon">⬡</div>
+        <h3>Peptides</h3>
+        <p class="cat__count"><span data-count="peptides">16</span> peptides</p>
+        <span class="cat__link">Shop peptides →</span>
+      </a>
+      <a class="cat" href="#catalog" data-cat="blends">
+        <div class="cat__icon">◈</div>
+        <h3>Blends</h3>
+        <p class="cat__count"><span data-count="blends">3</span> blends</p>
+        <span class="cat__link">Shop blends →</span>
+      </a>
+      <a class="cat" href="#catalog" data-cat="bac">
+        <div class="cat__icon">◌</div>
+        <h3>BAC Water</h3>
+        <p class="cat__count"><span data-count="bac">2</span> bac water</p>
+        <span class="cat__link">Shop bac water →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATALOG ============ -->
+<section class="section" id="catalog">
+  <div class="wrap">
+    <div class="catalog__head">
+      <div>
+        <span class="kicker">The catalog</span>
+        <h2 class="section__title">Featured research compounds</h2>
+      </div>
+      <div class="filters" id="filters" role="tablist">
+        <button class="filter is-active" data-filter="all">All</button>
+        <button class="filter" data-filter="peptides">Peptides</button>
+        <button class="filter" data-filter="blends">Blends</button>
+        <button class="filter" data-filter="bac">BAC Water</button>
+      </div>
+    </div>
+    <div class="product-grid" id="product-grid"><!-- rendered by app.js --></div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section section--alt" id="process">
+  <div class="wrap process__inner">
+    <div class="process__copy">
+      <span class="kicker">Signal, not noise</span>
+      <h2 class="section__title">Tested. Documented. Discreet.</h2>
+      <p class="muted">Every Helix compound is prepared with attention to purity, stability, and proper handling — then third-party tested for identity and purity, with certificates of analysis published lot by lot for review. Clear documentation, no guesswork.</p>
+      <ol class="steps">
+        <li><span class="steps__n">01 · Sourced</span><span class="steps__t">Qualified production channels</span></li>
+        <li><span class="steps__n">02 · Verified</span><span class="steps__t">Third-party identity &amp; purity</span></li>
+        <li><span class="steps__n">03 · Documented</span><span class="steps__t">Certificate of Analysis</span></li>
+        <li><span class="steps__n">04 · Shipped</span><span class="steps__t">24–48h, discreet packaging</span></li>
+      </ol>
+      <a href="#catalog" class="btn btn--ghost">View certificates of analysis</a>
+    </div>
+
+    <div class="coa-card">
+      <div class="coa-card__head">
+        <span>Representative COA</span>
+        <span class="badge badge--pass">VERIFIED</span>
+      </div>
+      <div class="coa-card__row"><span>Identity</span><strong class="pass">PASS</strong></div>
+      <div class="coa-card__row"><span>Purity (HPLC)</span><strong class="pass">98.7%</strong></div>
+      <div class="coa-card__row"><span>Molecular weight</span><strong>Confirmed</strong></div>
+      <div class="coa-card__row"><span>Endotoxin</span><strong class="pass">Within spec</strong></div>
+      <div class="coa-card__chart" aria-hidden="true">
+        <svg viewBox="0 0 300 80" preserveAspectRatio="none"><polyline points="0,70 40,68 90,66 130,20 150,6 170,24 210,66 260,69 300,70" fill="none" stroke="#38bdf8" stroke-width="2"/><polyline points="0,70 40,68 90,66 130,20 150,6 170,24 210,66 260,69 300,70" fill="rgba(56,189,248,.12)" stroke="none" style="--x:0"/></svg>
+      </div>
+      <p class="coa-card__note">Representative data for illustration. Download the per-lot COA on each product.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="wrap about__inner">
+    <div>
+      <span class="kicker">About Helix Peptides</span>
+      <h2 class="section__title">Built for researchers who demand clarity.</h2>
+      <p class="muted">Helix Peptides exists to give researchers a supply they can trust. We curate a focused catalog of widely studied peptides and prepare every vial with attention to purity, stability, and proper handling.</p>
+      <p class="muted">Our focus is signal over noise — consistency, transparency, and documentation. All products are intended strictly for laboratory and in-vitro research applications.</p>
+    </div>
+    <ul class="whylist">
+      <li><span class="tick">✓</span> Third-party tested for identity and purity</li>
+      <li><span class="tick">✓</span> Certificate of Analysis available per batch</li>
+      <li><span class="tick">✓</span> For laboratory research use only, always</li>
+      <li><span class="tick">✓</span> Fast, discreet U.S. shipping</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="section section--alt" id="standard">
+  <div class="wrap">
+    <span class="kicker">The Helix standard</span>
+    <h2 class="section__title">Quality you can build research on</h2>
+    <div class="features">
+      <div class="feature">
+        <div class="feature__icon">🔬</div>
+        <h3>Third-Party Verified</h3>
+        <p>Compounds are third-party tested for identity and purity, with Certificates of Analysis published in our COA library.</p>
+      </div>
+      <div class="feature">
+        <div class="feature__icon">📦</div>
+        <h3>Fast, Discreet Shipping</h3>
+        <p>Orders ship within 24–48 business hours in plain, protective packaging — free on U.S. orders over $200.</p>
+      </div>
+      <div class="feature">
+        <div class="feature__icon">🔒</div>
+        <h3>Secure Checkout</h3>
+        <p>Pay securely by card on our encrypted checkout. Card details are handled by the processor, never stored on our servers.</p>
+      </div>
+      <div class="feature">
+        <div class="feature__icon">💬</div>
+        <h3>Researcher Support</h3>
+        <p>A knowledgeable team ready to answer product and order questions at support@helixpeptides.co.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH HUB ============ -->
+<section class="section" id="research">
+  <div class="wrap">
+    <div class="catalog__head">
+      <div>
+        <span class="kicker">From the Research Hub</span>
+        <h2 class="section__title">Understand the science</h2>
+      </div>
+      <a href="#research" class="btn btn--ghost btn--sm">All guides</a>
+    </div>
+    <div class="hub">
+      <article class="hub__card">
+        <span class="hub__tag">Pillar guide</span>
+        <h3>Understanding Research Peptides in the Laboratory</h3>
+        <p>What research peptides are, how labs handle them as reference compounds, and why documentation matters.</p>
+        <span class="hub__link">Read guide →</span>
+      </article>
+      <article class="hub__card">
+        <span class="hub__tag">Lab practice</span>
+        <h3>Peptide Reconstitution &amp; Handling</h3>
+        <p>Reconstituting lyophilized powder, aliquoting, storage, and limiting freeze–thaw cycles.</p>
+        <span class="hub__link">Read guide →</span>
+      </article>
+      <article class="hub__card">
+        <span class="hub__tag">Compound guide</span>
+        <h3>BPC-157 in Research</h3>
+        <p>The gastric pentadecapeptide studied in tissue-repair, angiogenesis, and cytoprotection models.</p>
+        <span class="hub__link">Read guide →</span>
+      </article>
+      <article class="hub__card">
+        <span class="hub__tag">Metabolic</span>
+        <h3>Incretin &amp; Metabolic Receptor Agonists</h3>
+        <p>GLP-1, GIP and glucagon receptor biology and the single/dual/triple agonist research classes.</p>
+        <span class="hub__link">Read guide →</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="faq-cta">
+  <div class="cta__glow" aria-hidden="true"></div>
+  <div class="wrap cta__inner">
+    <h2>Ready to equip your research?</h2>
+    <p>Browse our catalog of high-purity research peptides and blends, third-party tested, with certificates of analysis published lot by lot. For laboratory research use only.</p>
+    <div class="cta__btns">
+      <a href="#catalog" class="btn btn--primary">Browse Catalog</a>
+      <a href="#contact" class="btn btn--ghost">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="news" id="contact">
+  <div class="wrap news__inner">
+    <div>
+      <h3>Research-grade updates</h3>
+      <p class="muted">New compounds, lab data, and restocks. No spam — unsubscribe anytime.</p>
+    </div>
+    <!-- Wire to Formspree/Netlify Forms: set action + method, see README -->
+    <form class="news__form" id="news-form" novalidate>
+      <input type="email" id="news-email" placeholder="you@lab.com" aria-label="Email address" required />
+      <button type="submit" class="btn btn--primary">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a class="brand" href="#top">
+        <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="22" height="22"><path d="M10 6c7 4.5 7 15.5 0 20M22 6c-7 4.5-7 15.5 0 20M9 11h14M9 16h14M9 21h14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></span>
+        <span class="brand__word">Helix Peptides</span>
+      </a>
+      <p class="footer__tag">PRECISION RESEARCH PEPTIDES</p>
+      <p class="muted small">Helix Peptides supplies high-purity research peptides for laboratory use only — third-party tested, with certificates of analysis published lot by lot, shipped fast and discreetly. Research use only.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Shop</h4>
+      <a href="#catalog">All Products</a>
+      <a href="#catalog">Peptides</a>
+      <a href="#catalog">Blends</a>
+      <a href="#catalog">BAC Water</a>
+      <a href="#process">COAs</a>
+    </div>
+    <div class="footer__col">
+      <h4>Company</h4>
+      <a href="#about">About Us</a>
+      <a href="#research">Research Hub</a>
+      <a href="#process">Lab Results</a>
+      <a href="#faq-cta">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="mailto:support@helixpeptides.co">support@helixpeptides.co</a>
+      <a href="#contact">Contact form</a>
+      <p class="muted small">Helix Peptides LLC<br>Replace with your business address</p>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <p>© <span id="year">2026</span> Helix Peptides LLC. All rights reserved.</p>
+    <div class="footer__links">
+      <a href="#">Shipping</a><a href="#">Refunds</a><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Disclaimer</a>
+    </div>
+  </div>
+  <p class="wrap disclaimer">For laboratory research use only. Products are not drugs, foods, supplements, or cosmetics, and are not intended for human or veterinary use. Statements have not been evaluated by the U.S. Food and Drug Administration.</p>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="drawer-overlay" id="drawer-overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer__head">
+    <h3>Your Cart <span class="drawer__count" id="drawer-count">0</span></h3>
+    <button class="icon-btn" id="cart-close" aria-label="Close cart">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="drawer__body" id="drawer-body"><!-- items --></div>
+  <div class="drawer__foot" id="drawer-foot">
+    <div class="drawer__row"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div>
+    <p class="drawer__ship">Free U.S. shipping on orders over $200.</p>
+    <button class="btn btn--primary btn--block" id="checkout-btn">Checkout</button>
+    <p class="drawer__fine">For laboratory research use only.</p>
+  </div>
+</aside>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
